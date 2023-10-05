@@ -66,10 +66,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(110, 1);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(147, 1);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(347, 31);
+            this.label1.Size = new System.Drawing.Size(420, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "BANQUE DE MONTREAL ";
             // 
@@ -77,10 +76,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(103, 32);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(137, 39);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(376, 31);
+            this.label2.Size = new System.Drawing.Size(450, 37);
             this.label2.TabIndex = 1;
             this.label2.Text = "Guichet Automatique Bancaire";
             // 
@@ -91,21 +89,21 @@
             this.grpNumero.Controls.Add(this.txtNumero);
             this.grpNumero.Controls.Add(this.label3);
             this.grpNumero.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpNumero.Location = new System.Drawing.Point(8, 80);
-            this.grpNumero.Margin = new System.Windows.Forms.Padding(2);
+            this.grpNumero.Location = new System.Drawing.Point(11, 98);
+            this.grpNumero.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpNumero.Name = "grpNumero";
-            this.grpNumero.Padding = new System.Windows.Forms.Padding(2);
-            this.grpNumero.Size = new System.Drawing.Size(520, 92);
+            this.grpNumero.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpNumero.Size = new System.Drawing.Size(693, 113);
             this.grpNumero.TabIndex = 2;
             this.grpNumero.TabStop = false;
             this.grpNumero.Text = "Verification Numero Client";
             // 
             // btnSuivantNumero
             // 
-            this.btnSuivantNumero.Location = new System.Drawing.Point(344, 53);
-            this.btnSuivantNumero.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSuivantNumero.Location = new System.Drawing.Point(459, 65);
+            this.btnSuivantNumero.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSuivantNumero.Name = "btnSuivantNumero";
-            this.btnSuivantNumero.Size = new System.Drawing.Size(151, 30);
+            this.btnSuivantNumero.Size = new System.Drawing.Size(201, 37);
             this.btnSuivantNumero.TabIndex = 2;
             this.btnSuivantNumero.Text = "Suivant  >>";
             this.btnSuivantNumero.UseVisualStyleBackColor = true;
@@ -113,19 +111,18 @@
             // 
             // txtNumero
             // 
-            this.txtNumero.Location = new System.Drawing.Point(242, 26);
-            this.txtNumero.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNumero.Location = new System.Drawing.Point(323, 32);
+            this.txtNumero.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNumero.Name = "txtNumero";
-            this.txtNumero.Size = new System.Drawing.Size(174, 23);
+            this.txtNumero.Size = new System.Drawing.Size(231, 27);
             this.txtNumero.TabIndex = 1;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(103, 32);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(137, 39);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(148, 17);
+            this.label3.Size = new System.Drawing.Size(175, 19);
             this.label3.TabIndex = 0;
             this.label3.Text = "Entrez Votre Numero :";
             // 
@@ -137,32 +134,32 @@
             this.grpNip.Controls.Add(this.txtNip);
             this.grpNip.Controls.Add(this.label4);
             this.grpNip.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpNip.Location = new System.Drawing.Point(9, 173);
-            this.grpNip.Margin = new System.Windows.Forms.Padding(2);
+            this.grpNip.Location = new System.Drawing.Point(12, 213);
+            this.grpNip.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpNip.Name = "grpNip";
-            this.grpNip.Padding = new System.Windows.Forms.Padding(2);
-            this.grpNip.Size = new System.Drawing.Size(519, 111);
+            this.grpNip.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpNip.Size = new System.Drawing.Size(692, 137);
             this.grpNip.TabIndex = 3;
             this.grpNip.TabStop = false;
             this.grpNip.Text = "Validation Nip";
+            this.grpNip.Enter += new System.EventHandler(this.grpNip_Enter);
             // 
             // lblMessage
             // 
             this.lblMessage.AutoSize = true;
             this.lblMessage.ForeColor = System.Drawing.Color.Blue;
-            this.lblMessage.Location = new System.Drawing.Point(120, 15);
-            this.lblMessage.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblMessage.Location = new System.Drawing.Point(160, 18);
             this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(15, 17);
+            this.lblMessage.Size = new System.Drawing.Size(17, 19);
             this.lblMessage.TabIndex = 3;
             this.lblMessage.Text = "x";
             // 
             // btnSuivantNip
             // 
-            this.btnSuivantNip.Location = new System.Drawing.Point(340, 70);
-            this.btnSuivantNip.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSuivantNip.Location = new System.Drawing.Point(453, 86);
+            this.btnSuivantNip.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSuivantNip.Name = "btnSuivantNip";
-            this.btnSuivantNip.Size = new System.Drawing.Size(155, 30);
+            this.btnSuivantNip.Size = new System.Drawing.Size(207, 37);
             this.btnSuivantNip.TabIndex = 2;
             this.btnSuivantNip.Text = "Suivant  >>";
             this.btnSuivantNip.UseVisualStyleBackColor = true;
@@ -170,19 +167,19 @@
             // 
             // txtNip
             // 
-            this.txtNip.Location = new System.Drawing.Point(238, 36);
-            this.txtNip.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNip.Location = new System.Drawing.Point(317, 44);
+            this.txtNip.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNip.Name = "txtNip";
-            this.txtNip.Size = new System.Drawing.Size(178, 23);
+            this.txtNip.PasswordChar = '*';
+            this.txtNip.Size = new System.Drawing.Size(236, 27);
             this.txtNip.TabIndex = 1;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(102, 42);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(136, 52);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(123, 17);
+            this.label4.Size = new System.Drawing.Size(146, 19);
             this.label4.TabIndex = 0;
             this.label4.Text = "Entrez Votre Nip  :";
             // 
@@ -193,11 +190,11 @@
             this.grpCompte.Controls.Add(this.btnSuivantCompte);
             this.grpCompte.Controls.Add(this.label5);
             this.grpCompte.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpCompte.Location = new System.Drawing.Point(9, 290);
-            this.grpCompte.Margin = new System.Windows.Forms.Padding(2);
+            this.grpCompte.Location = new System.Drawing.Point(12, 357);
+            this.grpCompte.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpCompte.Name = "grpCompte";
-            this.grpCompte.Padding = new System.Windows.Forms.Padding(2);
-            this.grpCompte.Size = new System.Drawing.Size(519, 102);
+            this.grpCompte.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpCompte.Size = new System.Drawing.Size(692, 126);
             this.grpCompte.TabIndex = 4;
             this.grpCompte.TabStop = false;
             this.grpCompte.Text = "Type de compte";
@@ -205,18 +202,18 @@
             // cboComptes
             // 
             this.cboComptes.FormattingEnabled = true;
-            this.cboComptes.Location = new System.Drawing.Point(245, 28);
-            this.cboComptes.Margin = new System.Windows.Forms.Padding(2);
+            this.cboComptes.Location = new System.Drawing.Point(327, 34);
+            this.cboComptes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboComptes.Name = "cboComptes";
-            this.cboComptes.Size = new System.Drawing.Size(170, 25);
+            this.cboComptes.Size = new System.Drawing.Size(225, 27);
             this.cboComptes.TabIndex = 3;
             // 
             // btnSuivantCompte
             // 
-            this.btnSuivantCompte.Location = new System.Drawing.Point(344, 60);
-            this.btnSuivantCompte.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSuivantCompte.Location = new System.Drawing.Point(459, 74);
+            this.btnSuivantCompte.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSuivantCompte.Name = "btnSuivantCompte";
-            this.btnSuivantCompte.Size = new System.Drawing.Size(151, 30);
+            this.btnSuivantCompte.Size = new System.Drawing.Size(201, 37);
             this.btnSuivantCompte.TabIndex = 2;
             this.btnSuivantCompte.Text = "Suivant  >>";
             this.btnSuivantCompte.UseVisualStyleBackColor = true;
@@ -225,10 +222,9 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(103, 28);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(137, 34);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(152, 17);
+            this.label5.Size = new System.Drawing.Size(182, 19);
             this.label5.TabIndex = 0;
             this.label5.Text = "Choisir Votre Compte :";
             // 
@@ -244,11 +240,11 @@
             this.grpTransaction.Controls.Add(this.txtDeposer);
             this.grpTransaction.Controls.Add(this.lblDeposer);
             this.grpTransaction.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpTransaction.Location = new System.Drawing.Point(9, 396);
-            this.grpTransaction.Margin = new System.Windows.Forms.Padding(2);
+            this.grpTransaction.Location = new System.Drawing.Point(12, 487);
+            this.grpTransaction.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpTransaction.Name = "grpTransaction";
-            this.grpTransaction.Padding = new System.Windows.Forms.Padding(2);
-            this.grpTransaction.Size = new System.Drawing.Size(519, 124);
+            this.grpTransaction.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpTransaction.Size = new System.Drawing.Size(692, 153);
             this.grpTransaction.TabIndex = 5;
             this.grpTransaction.TabStop = false;
             this.grpTransaction.Text = "Types de Transactions";
@@ -256,29 +252,28 @@
             // lblRetirer
             // 
             this.lblRetirer.AutoSize = true;
-            this.lblRetirer.Location = new System.Drawing.Point(226, 51);
-            this.lblRetirer.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblRetirer.Location = new System.Drawing.Point(301, 63);
             this.lblRetirer.Name = "lblRetirer";
-            this.lblRetirer.Size = new System.Drawing.Size(15, 17);
+            this.lblRetirer.Size = new System.Drawing.Size(18, 19);
             this.lblRetirer.TabIndex = 7;
             this.lblRetirer.Text = "$";
             // 
             // txtRetirer
             // 
-            this.txtRetirer.Location = new System.Drawing.Point(142, 48);
-            this.txtRetirer.Margin = new System.Windows.Forms.Padding(2);
+            this.txtRetirer.Location = new System.Drawing.Point(189, 59);
+            this.txtRetirer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtRetirer.Name = "txtRetirer";
-            this.txtRetirer.Size = new System.Drawing.Size(80, 23);
+            this.txtRetirer.Size = new System.Drawing.Size(105, 27);
             this.txtRetirer.TabIndex = 6;
             // 
             // radConsulter
             // 
             this.radConsulter.AutoSize = true;
             this.radConsulter.Checked = true;
-            this.radConsulter.Location = new System.Drawing.Point(50, 72);
-            this.radConsulter.Margin = new System.Windows.Forms.Padding(2);
+            this.radConsulter.Location = new System.Drawing.Point(67, 89);
+            this.radConsulter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radConsulter.Name = "radConsulter";
-            this.radConsulter.Size = new System.Drawing.Size(87, 21);
+            this.radConsulter.Size = new System.Drawing.Size(104, 23);
             this.radConsulter.TabIndex = 5;
             this.radConsulter.TabStop = true;
             this.radConsulter.Text = "Consulter";
@@ -288,10 +283,10 @@
             // radRetirer
             // 
             this.radRetirer.AutoSize = true;
-            this.radRetirer.Location = new System.Drawing.Point(50, 48);
-            this.radRetirer.Margin = new System.Windows.Forms.Padding(2);
+            this.radRetirer.Location = new System.Drawing.Point(67, 59);
+            this.radRetirer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radRetirer.Name = "radRetirer";
-            this.radRetirer.Size = new System.Drawing.Size(71, 21);
+            this.radRetirer.Size = new System.Drawing.Size(86, 23);
             this.radRetirer.TabIndex = 4;
             this.radRetirer.Text = "Retirer";
             this.radRetirer.UseVisualStyleBackColor = true;
@@ -300,10 +295,10 @@
             // radDeposer
             // 
             this.radDeposer.AutoSize = true;
-            this.radDeposer.Location = new System.Drawing.Point(50, 24);
-            this.radDeposer.Margin = new System.Windows.Forms.Padding(2);
+            this.radDeposer.Location = new System.Drawing.Point(67, 30);
+            this.radDeposer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radDeposer.Name = "radDeposer";
-            this.radDeposer.Size = new System.Drawing.Size(76, 21);
+            this.radDeposer.Size = new System.Drawing.Size(91, 23);
             this.radDeposer.TabIndex = 3;
             this.radDeposer.Text = "Deposer";
             this.radDeposer.UseVisualStyleBackColor = true;
@@ -311,10 +306,10 @@
             // 
             // btnSuivantTransaction
             // 
-            this.btnSuivantTransaction.Location = new System.Drawing.Point(344, 84);
-            this.btnSuivantTransaction.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSuivantTransaction.Location = new System.Drawing.Point(459, 103);
+            this.btnSuivantTransaction.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSuivantTransaction.Name = "btnSuivantTransaction";
-            this.btnSuivantTransaction.Size = new System.Drawing.Size(151, 30);
+            this.btnSuivantTransaction.Size = new System.Drawing.Size(201, 37);
             this.btnSuivantTransaction.TabIndex = 2;
             this.btnSuivantTransaction.Text = "Suivant  >>";
             this.btnSuivantTransaction.UseVisualStyleBackColor = true;
@@ -322,19 +317,18 @@
             // 
             // txtDeposer
             // 
-            this.txtDeposer.Location = new System.Drawing.Point(142, 21);
-            this.txtDeposer.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDeposer.Location = new System.Drawing.Point(189, 26);
+            this.txtDeposer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDeposer.Name = "txtDeposer";
-            this.txtDeposer.Size = new System.Drawing.Size(80, 23);
+            this.txtDeposer.Size = new System.Drawing.Size(105, 27);
             this.txtDeposer.TabIndex = 1;
             // 
             // lblDeposer
             // 
             this.lblDeposer.AutoSize = true;
-            this.lblDeposer.Location = new System.Drawing.Point(226, 24);
-            this.lblDeposer.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDeposer.Location = new System.Drawing.Point(301, 30);
             this.lblDeposer.Name = "lblDeposer";
-            this.lblDeposer.Size = new System.Drawing.Size(15, 17);
+            this.lblDeposer.Size = new System.Drawing.Size(18, 19);
             this.lblDeposer.TabIndex = 0;
             this.lblDeposer.Text = "$";
             // 
@@ -343,11 +337,11 @@
             this.grpInformation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.grpInformation.Controls.Add(this.lblInfoCompte);
             this.grpInformation.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpInformation.Location = new System.Drawing.Point(9, 524);
-            this.grpInformation.Margin = new System.Windows.Forms.Padding(2);
+            this.grpInformation.Location = new System.Drawing.Point(12, 645);
+            this.grpInformation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpInformation.Name = "grpInformation";
-            this.grpInformation.Padding = new System.Windows.Forms.Padding(2);
-            this.grpInformation.Size = new System.Drawing.Size(519, 93);
+            this.grpInformation.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpInformation.Size = new System.Drawing.Size(692, 114);
             this.grpInformation.TabIndex = 6;
             this.grpInformation.TabStop = false;
             this.grpInformation.Text = "Information du Compte";
@@ -356,19 +350,18 @@
             // 
             this.lblInfoCompte.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblInfoCompte.ForeColor = System.Drawing.Color.Blue;
-            this.lblInfoCompte.Location = new System.Drawing.Point(38, 19);
-            this.lblInfoCompte.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblInfoCompte.Location = new System.Drawing.Point(51, 23);
             this.lblInfoCompte.Name = "lblInfoCompte";
-            this.lblInfoCompte.Size = new System.Drawing.Size(202, 61);
+            this.lblInfoCompte.Size = new System.Drawing.Size(269, 75);
             this.lblInfoCompte.TabIndex = 0;
             // 
             // btnTerminer
             // 
             this.btnTerminer.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTerminer.Location = new System.Drawing.Point(183, 626);
-            this.btnTerminer.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTerminer.Location = new System.Drawing.Point(244, 770);
+            this.btnTerminer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTerminer.Name = "btnTerminer";
-            this.btnTerminer.Size = new System.Drawing.Size(168, 30);
+            this.btnTerminer.Size = new System.Drawing.Size(224, 37);
             this.btnTerminer.TabIndex = 2;
             this.btnTerminer.Text = "^^ TERMINER ^^";
             this.btnTerminer.UseVisualStyleBackColor = true;
@@ -376,9 +369,9 @@
             // 
             // frmBankGab
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(538, 658);
+            this.ClientSize = new System.Drawing.Size(717, 810);
             this.Controls.Add(this.btnTerminer);
             this.Controls.Add(this.grpInformation);
             this.Controls.Add(this.grpTransaction);
@@ -387,7 +380,7 @@
             this.Controls.Add(this.grpNumero);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmBankGab";
             this.Text = "420-POO-TT INSTITUT TECCART";
             this.Load += new System.EventHandler(this.frmBankGab_Load);
